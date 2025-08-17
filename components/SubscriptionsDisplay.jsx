@@ -48,12 +48,12 @@ export default function SubscriptionsDisplay() {
                   <p>Due</p>
                   <h4>{getDaysUntilNextCharge(startDate, billingFrequency)}</h4>
                 </div>
-                <div className="white-line" />
-                <p>{notes}</p>
-                <div className="subscription-actions">
-                  <button className="button-card">Edit</button>
-                  <button className="button-card">Delete</button>
-                </div>
+              </div>
+              <div className="white-line" />
+              <p>{notes}</p>
+              <div className="subscription-actions">
+                <button className="button-card">Edit</button>
+                <button className="button-card">Delete</button>
               </div>
             </div>
           );

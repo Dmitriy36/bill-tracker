@@ -87,7 +87,7 @@ export default function SubscriptionForm() {
           <textarea name="notes" placeholder="e.g. private / shared / etc." />
         </label>
 
-        <div className="fat-column form-submit-btn">
+        <div className="fat-column form-submit-btns">
           <button>Cancel</button>
           <button type="submit">Add Bill</button>
         </div>
