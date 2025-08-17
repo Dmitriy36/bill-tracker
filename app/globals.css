@@ -6,6 +6,21 @@
   color: black;
 }
 
+input,
+textarea,
+select {
+  font-size: 1em;
+  background-color: #f8fafc;
+  border: 1px solid #bed1e7;
+  color: #030615;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1px;
+  width: 100%;
+  /* max-width: fit-content; */
+  outline: none;
+  appearance: none;
+}
+
 button {
   background-color: #007bff; /* A pleasant blue */
   color: white; /* White text for contrast */
@@ -183,6 +198,28 @@ main {
   border-radius: 2px;
   padding: 2rem 0;
   width: 30%;
+}
+
+.card-button-primary,
+.card-button-secondary {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.card-button-primary {
+  color: lightgreen;
+  background: lightblue;
+}
+
+.card-button-secondary {
+  color: black;
+  background: lightyellow;
+}
+
+.card-button-primary:hover,
+.card-button-secondary:hover {
+  transform: none;
+  opacity: 0.6;
 }
 
 /* dashboard page */

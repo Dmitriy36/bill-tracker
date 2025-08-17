@@ -1,8 +1,10 @@
 import Login from "@/components/Login";
 import SubscriptionsDisplay from "@/components/SubscriptionsDisplay";
 import SubscriptionSummary from "@/components/SubscriptionSummary";
+import SubscriptionForm from "@/components/SubscriptionForm";
 export default function DashBoardpage() {
-  const isAuthenticated = false;
+  const isAuthenticated = true;
+  const isAddEntry = true;
   if (!isAuthenticated) {
     return <Login />;
   }
@@ -10,6 +12,7 @@ export default function DashBoardpage() {
     <>
       <SubscriptionSummary />
       <SubscriptionsDisplay />
+      {isAddEntry && <SubscriptionForm />}
     </>
   );
 }
