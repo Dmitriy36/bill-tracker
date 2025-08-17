@@ -10,6 +10,14 @@ button {
   width: fit-content;
 }
 
+.card {
+  background-color: blue;
+  color: var(--color-primary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid green;
+}
+
 /* p {
   color: blue;
 } */
@@ -57,12 +65,79 @@ header div:first-of-type a {
   background: black;
 }
 
-/* home page */
 main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   flex: 1;
+}
+
+/* home page */
+.hero-section {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.hero-section > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header-text {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.hero-section svg {
+  height: 2rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section > div:first-of-type p {
+  max-width: 300px;
+}
+
+.hero-display {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.hero-display > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-display > div:first-of-type {
+  padding-top: 2.5rem;
+}
+
+.hero-display .card {
+  aspect-ratio: 16/9;
+  border-radius: 3px;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-display .card > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.card-header,
+.card-description-large,
+.card-description-small {
+  border-radius: 3px;
+  background: orange;
+  opacity: 0.4;
 }
 
 /* dashboard page */
