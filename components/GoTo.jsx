@@ -1,6 +1,6 @@
-"use client";
+"use client"; // make this a client-side page
 import { usePathname } from "next/navigation"; // removed {}
-import  Link  from "next/link";
+import Link from "next/link";
 export default function GoTo() {
   const isAuthenticated = false;
   const path = usePathname();
